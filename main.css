@@ -1,0 +1,12 @@
+.wrapper {
+	max-width: 1200px;
+	margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid red;
+  grid-gap:20px;
+}
+.wrapper div{
+	border: 1px solid red;
+}
