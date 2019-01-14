@@ -1,19 +1,36 @@
+.bg {
+	background-image: url("../img/bg.png");
+	 
+}
 .grid {
+	max-width: 1200px;
 	margin-left: auto;
     margin-right: auto;
 	display: grid;
 	grid-gap: 20px;
 	grid-template-areas:
 		"header"
+		"slider"
+		"titlu1"
 		"main"
+		"titlu2"
+		"opinie"
 		"footer";
 }
 header {
 	grid-area: header;
 }
-
-article {
+titlu1 {
+	grid-area: titlu1;
+}
+main {
 	grid-area: main;
+}
+titlu2 {
+	grid-area: titlu2;
+}
+opinie {
+	grid-area: opinie;
 }
 footer {
 	grid-area: footer;
@@ -27,18 +44,31 @@ footer {
 	.grid header .menu{
 		display: grid;
 		grid-template-columns:auto auto auto;
-		
-	
 	}
 	.grid header div li{
 		border: 1px solid red;
+		list-style-type: none;
+		margin: auto;
 	}
-
+	.grid header div li a{
+		color: #000;
+	}
+	.title {
+		margin-left: auto;
+    margin-right: auto;
+	}
+	.title h1{
+		color: #000;
+	}
+.grid main{
+		display: grid;
+		grid-template-columns:auto auto auto;
+		
+	}
+	}
 .grid > * {
-	background-color: #28314E;
-	border: 1px solid #212941;
-	border-radius: 5px;
-	padding: 8px 15px;
+	
+
 	color: #ffffff;
 	font-size: 18px;
 	font-family: roboto;
