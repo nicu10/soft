@@ -11,26 +11,16 @@
 	grid-template-areas:
 		"header"
 		"slider"
-		"titlu1"
 		"main"
-		"titlu2"
 		"opinie"
 		"footer";
 }
 header {
 	grid-area: header;
 }
-titlu1 {
-	grid-area: titlu1;
 }
 main {
 	grid-area: main;
-}
-titlu2 {
-	grid-area: titlu2;
-}
-opinie {
-	grid-area: opinie;
 }
 footer {
 	grid-area: footer;
@@ -53,22 +43,62 @@ footer {
 	.grid header div li a{
 		color: #000;
 	}
-	.title {
-		margin-left: auto;
-    margin-right: auto;
-	}
-	.title h1{
-		color: #000;
-	}
-.grid main{
-		display: grid;
-		grid-template-columns:auto auto auto;
-		
-	}
-	}
-.grid > * {
-	
+  .titlu { grid-area: titlu; }
+  .despre1{ grid-area: despre1;}
+  .despre2{ grid-area: despre2;}
+  .despre3{ grid-area: despre3;}
+  .titlu2 { grid-area: titlu2; }
+  .coment1{ grid-area: coment1;}
+  .coment2{ grid-area: coment2;}
+  .coment3{ grid-area: coment3;}
 
+.gridmain {
+	display:grid;
+	grid-template-areas:
+		"titlu titlu titlu"
+		"despre1 despre2 despre3"
+		"titlu2 titlu2 titlu2"
+		"coment1 coment2 coment3"
+}
+@media screen and (max-width: 600px) {
+.gridmain {
+	display:grid;
+	grid-template-areas:
+		"titlu titlu "
+		"despre1 despre2"
+		"despre3 despre3"
+		"titlu2 titlu2 "
+		"coment1 coment2"
+		"coment3 coment3"
+}
+}
+.gridmain div h2{
+	color:black;
+}
+.stdes{
+	border:1px solid red;
+}
+.foto{
+	width:100px;
+	height:100px;
+	margin-left: auto;
+    margin-right: auto;
+    border:1px solid red;
+}
+.gridmain .titlu {
+	margin-left: auto;
+    margin-right: auto;
+}
+.gridmain .titlu2 {
+	margin-left: auto;
+    margin-right: auto;
+}
+.gridmain .des {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.grid > * {
 	color: #ffffff;
 	font-size: 18px;
 	font-family: roboto;
