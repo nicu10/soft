@@ -1,6 +1,8 @@
+a{
+	 text-decoration: none;
+}
 .bg {
-	background-image: url("../img/bg.png");
-	 
+	background-image: url("../img/bg.png"); 
 }
 .grid {
 	max-width: 1200px;
@@ -18,14 +20,32 @@
 header {
 	grid-area: header;
 }
-}
 main {
 	grid-area: main;
 }
 footer {
 	grid-area: footer;
 }
-
+.menu li a{
+	font-size: 24px;
+	font-family: 'Abril Fatface', cursive;
+	transition: 2s;
+	-webkit-transition-timing-function: linear;
+}
+.menu li {
+	min-width: 150px;
+}
+.menu li i{
+	display: none;
+}
+.menu li a:hover{
+	color: blue;
+transition: 1s;
+}
+.menu li a:hover i{
+	display: inline;
+	transition: 1s;
+}
 	.grid header {
 		display: grid;
 		grid-template-columns:30% 70%;
@@ -58,7 +78,11 @@ footer {
 		"titlu titlu titlu"
 		"despre1 despre2 despre3"
 		"titlu2 titlu2 titlu2"
-		"coment1 coment2 coment3"
+		"foto1 coment1 coment1"
+}
+.foto1{
+	width: 100%;
+	background-color: red;
 }
 @media screen and (max-width: 600px) {
 .gridmain {
@@ -69,7 +93,6 @@ footer {
 		"despre3 despre3"
 		"titlu2 titlu2 "
 		"coment1 coment2"
-		"coment3 coment3"
 }
 }
 .gridmain div h2{
@@ -77,13 +100,36 @@ footer {
 }
 .stdes{
 	border:1px solid red;
+	max-width: 300px;
+	text-align: center;
+	color: black;
+}
+.stdes h2{
+	font-family: 'Abril Fatface', cursive;
+	margin-top:-20px;
+}
+.stdes a{
+	font-family: 'Coiny', cursive;
+font-size: 24px;
+border: 1px solid black;
+border-radius: 10px;
+padding: 10px;
+}
+.stdes p{
+	font-family: 'Open Sans', sans-serif;
+}
+.stdes a i{
+display:none;
+}
+.stdes a:hover i{
+display:inline;
+ -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+  color:blue; 
 }
 .foto{
-	width:100px;
-	height:100px;
-	margin-left: auto;
-    margin-right: auto;
-    border:1px solid red;
+	width:220px;
+	height:220px;
 }
 .gridmain .titlu {
 	margin-left: auto;
@@ -102,4 +148,10 @@ footer {
 	color: #ffffff;
 	font-size: 18px;
 	font-family: roboto;
+}
+.titlu{
+	font-family: 'Abril Fatface', cursive;
+}
+.titlu2{
+	font-family: 'Abril Fatface', cursive;
 }

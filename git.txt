@@ -1,0 +1,11 @@
+git branch - ne uitam 
+git checkout -b- creem
+git checkout 'denumire'-schimbam branch
+git remote add origin <sait> aratam unde e github
+git push -u origin master
+git merge <vetka>  unieste vetca in care ne aflem cu cea scrisa
+
+
+
+
+https://b24-rtvmnj.bitrix24.ru/company/personal/user/1/tasks/board/
