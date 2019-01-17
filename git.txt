@@ -7,5 +7,7 @@ git merge <vetka>  unieste vetca in care ne aflem cu cea scrisa
 
 
 
+instalare webpack prin npm--- npm i webpack -g
+
 
 https://b24-rtvmnj.bitrix24.ru/company/personal/user/1/tasks/board/

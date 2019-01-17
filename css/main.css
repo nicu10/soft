@@ -23,54 +23,52 @@ header {
 main {
 	grid-area: main;
 }
-footer {
+.footer {
 	grid-area: footer;
+	color: black;
 }
 .menu li a{
+    color: #7f8ba3;
 	font-size: 24px;
 	font-family: 'Abril Fatface', cursive;
-	transition: 2s;
-	-webkit-transition-timing-function: linear;
-}
-.menu li {
-	min-width: 150px;
 }
 .menu li i{
 	display: none;
 }
-.menu li a:hover{
-	color: blue;
+
+.menu li:hover a{
+	transition: 1s;
+  color: #7f8ba3;
 transition: 1s;
+text-shadow: 1px 1px black;
 }
 .menu li a:hover i{
-	display: inline;
-	transition: 1s;
+display: inline;
 }
 	.grid header {
 		display: grid;
 		grid-template-columns:30% 70%;
-		border: 1px solid red;
+	}
+	@media screen and (max-width: 890px) {
+		.grid header{
+grid-template-columns:100%;}
+
+.logo{
+text-align: center;
+}
+	
 	}
 	.grid header .menu{
 		display: grid;
 		grid-template-columns:auto auto auto;
 	}
 	.grid header div li{
-		border: 1px solid red;
 		list-style-type: none;
 		margin: auto;
 	}
 	.grid header div li a{
 		color: #000;
 	}
-  .titlu { grid-area: titlu; }
-  .despre1{ grid-area: despre1;}
-  .despre2{ grid-area: despre2;}
-  .despre3{ grid-area: despre3;}
-  .titlu2 { grid-area: titlu2; }
-  .coment1{ grid-area: coment1;}
-  .coment2{ grid-area: coment2;}
-  .coment3{ grid-area: coment3;}
 
 .gridmain {
 	display:grid;
@@ -79,10 +77,23 @@ transition: 1s;
 		"despre1 despre2 despre3"
 		"titlu2 titlu2 titlu2"
 		"foto1 coment1 coment1"
+		"coment2 coment2 foto2"
+			"foto3 coment3 coment3"
+
 }
+.titlu { grid-area: titlu; }
+  .despre1{ grid-area: despre1;}
+  .despre2{ grid-area: despre2;}
+  .despre3{ grid-area: despre3;}
+  .titlu2 { grid-area: titlu2; }
+  .coment1{ grid-area: coment1;}
+  .coment2{ grid-area: coment2;}
+  .coment3{ grid-area: coment3;}
+  .foto1{ grid-area: foto1;}
+  .foto2{ grid-area: foto2;}
+  .foto3{ grid-area: foto3;}
 .foto1{
 	width: 100%;
-	background-color: red;
 }
 @media screen and (max-width: 600px) {
 .gridmain {
@@ -96,10 +107,9 @@ transition: 1s;
 }
 }
 .gridmain div h2{
-	color:black;
+	
 }
 .stdes{
-	border:1px solid red;
 	max-width: 300px;
 	text-align: center;
 	color: black;
@@ -109,9 +119,9 @@ transition: 1s;
 	margin-top:-20px;
 }
 .stdes a{
+	  color: #7f8ba3;
 	font-family: 'Coiny', cursive;
 font-size: 24px;
-border: 1px solid black;
 border-radius: 10px;
 padding: 10px;
 }
@@ -123,9 +133,11 @@ display:none;
 }
 .stdes a:hover i{
 display:inline;
- -webkit-transition: width 2s; /* Safari */
-  transition: width 2s;
-  color:blue; 
+}
+.stdes a:hover{
+	color: rgb(127,139,163);
+	transition: 1s;
+	text-shadow: 1px 1px black;
 }
 .foto{
 	width:220px;
@@ -155,3 +167,92 @@ display:inline;
 .titlu2{
 	font-family: 'Abril Fatface', cursive;
 }
+.ffo{
+	text-align: center;;
+}
+.ffo img{
+	max-width: 250px;
+}
+.com{
+	padding-left:30px;
+	padding-right: :30px;
+}
+.tc{
+	  color: rgb(127,139,163);
+	  font-family: 'Abril Fatface', cursive;
+}
+.com{
+	text-align: center;
+}
+.com p{
+	color: black;
+		font-family: 'Open Sans', sans-serif;
+}
+.linia{
+	width: 80%;
+	color: rgb(127,139,163);
+	 size="2"
+	 text-align: center;
+}
+.dt{
+	color: black
+}
+.des{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.linkr{
+	text-align: center;
+}
+.linkr a{
+	color: rgb(127,139,163);
+	font-size: 35px;
+	margin: 5px;
+}
+.linkr a:hover{
+	transition: 1s;
+	text-shadow: 2px 2px black;
+	font-size: 35px;
+	margin: 5px;
+}
+.coper{
+	text-align: center;
+	color: black
+}
+.logo a img{
+	max-width: 300px;
+}
+@media screen and (max-width: 890px) {
+	.gridmain {
+	display:grid;
+	grid-template-areas:
+		"titlu titlu "
+		"despre1 despre2"
+		"despre3 despre3"
+		"titlu2 titlu2 "
+		"foto1 foto1"
+		"coment1 coment1"
+		"foto2 foto2"
+		"coment2 coment2"
+			"foto3 foto3"
+			"coment3 coment3"
+}
+}
+@media screen and (max-width: 650px) {
+.gridmain {
+	display:grid;
+	grid-template-areas:
+		"titlu titlu "
+		"despre1 despre1"
+		"despre2 despre2"
+		"despre3 despre3"
+		"titlu2 titlu2 "
+		"foto1 foto1"
+		"coment1 coment1"
+		"foto2 foto2"
+		"coment2 coment2"
+			"foto3 foto3"
+			"coment3 coment3"
+}
+}
+	}
